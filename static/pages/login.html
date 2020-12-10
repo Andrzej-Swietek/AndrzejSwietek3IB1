@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel - Login</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="/"> Main </a> </li>
+            <li> <a href="/register">Register</a> </li>
+            <li> <a href="/login"> Login </a> </li>
+            <li> <a href="/admin"> Admin </a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="img"></div>
+        <div class="login">
+            <form method="POST" action="/loginHandle">
+                <label for="name">Login</label>
+                <input type="text" name="login" required/>
+    
+                <label for="name">Password</label>
+                <input type="password" name="password" required/>
+    
+                <button type="submit" [disabled]="!form.form.valid">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+       <p>All rights reserved &copy; 2020 Andrzej Świętek</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel - Register</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="/"> Main </a> </li>
+            <li> <a href="/register">Register</a> </li>
+            <li> <a href="/login"> Login </a> </li>
+            <li> <a href="/admin"> Admin </a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="img"></div>
+        <div class="register">
+            <form method="POST" action="/registerHandle">
+                <label for="login">Login</label>
+                <input type="text" name="login" required/>
+    
+                <label for="password">Password</label>
+                <input type="password" name="password" required/>
+
+                <label for="wiek">Wiek</label>
+                <select type="checkbox" name="wiek" >
+                    <option>10</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                </select>
+
+                <div class="ch">
+                    <label for="uczen">Uczeń</label>
+                    <input type="checkbox" name="uczen" />
+                </div>
+
+
+                <div class="radiony">
+                    <label>Płeć</label>
+                    <div>
+                        <label for="plec-kobieta">K</label>
+                        <input type="radio" name="plec" value="k" />
+                    </div>
+                    <div>
+                        <label for="man">M</label>
+                        <input type="radio" id="man" name="plec" value="m" />
+                    </div>
+
+                </div>
+
+    
+                <button type="submit" [disabled]="!form.form.valid">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+       <p>All rights reserved &copy; 2020 Andrzej Świętek</p>
+    </footer>
+</body>
+</html>

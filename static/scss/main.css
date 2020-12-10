@@ -1,0 +1,648 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  background-color: #283238;
+}
+
+nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  list-style: none;
+}
+
+nav ul li {
+  width: 100px;
+  height: 100%;
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav ul li:hover {
+  background: #191e32;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+nav ul li a:hover {
+  color: #cccccc;
+}
+
+nav.smallNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  background-color: #3d4d56;
+}
+
+nav.smallNav ul li {
+  -webkit-transition: border .5;
+  transition: border .5;
+}
+
+nav.smallNav ul li:hover {
+  border-bottom: 5px solid #24ff72;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main div.img {
+  width: 40%;
+  height: 100%;
+  background-position: center;
+  overflow: hidden;
+  background: url("../images/splash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main div.smallIMG {
+  width: 10%;
+  height: 100%;
+  background-position: -1000px;
+  overflow: hidden;
+  background: url("../images/splash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main div.data {
+  width: 90%;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  color: #283238;
+}
+
+main div.data h2 {
+  padding: 5px 20px;
+  background-color: #283238;
+  color: white;
+}
+
+main div.data div.userDetails {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  border: 1px #283238 solid;
+  color: #283238;
+}
+
+main div.data div.userDetails p {
+  margin: .5rem 0;
+}
+
+main div.data .tabelka {
+  border: 3px solid #283238;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  padding: 1rem;
+}
+
+main div.data .tabelka tr {
+  border: 2px solid #3d4d56;
+}
+
+main div.data .tabelka tr td {
+  padding: 1rem;
+  border: 1px solid #688291;
+}
+
+main div.data .tabelka tr:hover {
+  padding: 14px 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main .form_i_tabelka {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main .form_i_tabelka form {
+  margin: 1rem 0 2rem 0;
+}
+
+main h1.hello {
+  width: 60%;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  color: #283238;
+}
+
+main h1.hello::before {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+main div.login {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main div.login form {
+  width: 60%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main div.login form input {
+  margin: 1rem 0;
+  border: none;
+  padding: 15px 4px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main div.login form input:focus {
+  outline: none;
+}
+
+main div.login form input[type='text'] {
+  background: none;
+}
+
+main div.login form label {
+  color: #283238;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+main div.login form button {
+  color: #283238;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 15px 4px;
+  width: 100px;
+  background: none;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main div.login form button:hover {
+  background: #283238;
+  color: #fff;
+}
+
+main div.register {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main div.register form {
+  width: 80%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main div.register form input {
+  margin: 1rem 0;
+  border: none;
+  padding: 15px 4px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main div.register form input:focus {
+  outline: none;
+}
+
+main div.register form input[type='text'] {
+  background: none;
+}
+
+main div.register form input[type='radio'] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main div.register form .radiony {
+  padding: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  margin: 1rem 0;
+}
+
+main div.register form .radiony label {
+  margin: 0 5px;
+}
+
+main div.register form .ch {
+  padding: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  margin: 1rem 0;
+  width: auto;
+  height: 3rem;
+}
+
+main div.register form .ch label {
+  margin: 0 15px;
+}
+
+main div.register form .ch input {
+  margin: 0 15px;
+}
+
+main div.register form label {
+  color: #283238;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+main div.register form select {
+  margin: 1rem 0;
+  border: none;
+  padding: 4px 15px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+}
+
+main div.register form button {
+  color: #283238;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 15px 4px;
+  width: 100px;
+  background: none;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main div.register form button:hover {
+  background: #283238;
+  color: #fff;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  background: #283238;
+}
+
+.noright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  height: 30vh;
+  width: 60%;
+}
+
+.noright h1 {
+  color: #ff0033;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  margin: 1rem;
+}
+
+.noright p a {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  color: #283238;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.noright p a:hover {
+  color: #24ff72;
+}
+
+.alert {
+  height: 35vh;
+  width: 1000px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #283238;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.alert h1 {
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: 1rem 0;
+}
+
+.alert h2 {
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.alert a {
+  margin: 1rem 0;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border: white dashed 2px;
+  -webkit-transition: color .5;
+  transition: color .5;
+  -webkit-transition: border .5;
+  transition: border .5;
+}
+
+.alert a:hover {
+  color: #24ff72;
+  border: #24ff72 dashed 2px;
+}
+
+.bad-alert {
+  height: 35vh;
+  width: 1000px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.56);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #283238;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  border: dashed 3px #ff0033;
+}
+
+.bad-alert h1 {
+  color: #ff0033;
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: 1rem 0;
+}
+
+.bad-alert h2 {
+  color: #ff0033;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.bad-alert a {
+  margin: 1rem 0;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border: white dashed 2px;
+  -webkit-transition: color .5;
+  transition: color .5;
+  -webkit-transition: border .5;
+  transition: border .5;
+}
+
+.bad-alert a:hover {
+  color: #24ff72;
+  border: #24ff72 dashed 2px;
+}
+/*# sourceMappingURL=main.css.map */
